@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ryan="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <com.ryan.customwave.CustomWave
+        android:id="@+id/cv_wave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        ryan:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="#00FFFFFF"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_wave_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_weight="1" >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_wave_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00FFFFFF"
+            android:text="加入"
+            android:textColor="@color/selector_btn_text_color" />
+
+        <Button
+            android:id="@+id/btn_wave_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#00FFFFFF"
+            android:text="取消"
+            android:textColor="@color/selector_btn_text_color" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="请随意触摸或者点击屏幕"
+        android:textColor="#2E9DF7" />
+
+</RelativeLayout>

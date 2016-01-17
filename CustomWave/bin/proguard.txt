@@ -1,0 +1,6 @@
+# view res/layout/activity_main.xml #generated:8
+-keep class com.ryan.customwave.CustomWave { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class com.ryan.customwave.MainActivity { <init>(...); }
+
