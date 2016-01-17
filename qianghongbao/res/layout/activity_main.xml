@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_button_background"
+        android:text="开启服务"
+        android:textColor="#FFF"
+        android:textSize="23sp"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#666"
+        android:textSize="10sp"
+        android:gravity="bottom"
+        android:text="使用说明：\n 
+        	1.本软件需要获得系统授权，点击上方“开启服务”按钮，进入系统设置的辅助功能界面，在此界面下找到 “抢红包”选项，点进去打开服务即可；\n 
+        	2.说明1的授权具有一定危险性，请勿随意使用。一旦某个应用享有该授权，就可以监视屏幕状态，获取你的银行密码等信息轻而易举；\n
+        	3.本软件使用条件：a.说明1中的服务必须开启  b.屏幕在解锁状态下；\n
+        	4.抢到的红包金额由微信内部算法决定，本软件无法左右；\n
+        	5.本软件仅供娱乐。"/>
+</LinearLayout>
