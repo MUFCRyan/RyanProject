@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <com.ryan.quicksearch.QuickSearchMenu
+        android:id="@+id/qsm_search_menu"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#f00" />
+    <ListView 
+        android:id="@+id/lv_names"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/qsm_search_menu"
+        />
+    <TextView 
+        android:id="@+id/tv_indicate_letter"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#8888"
+        android:textSize="60sp"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        android:text="A"
+        android:visibility="gone"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
